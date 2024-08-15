@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              baseAccent: '#7B7BE7',
+              textAccent: '#f2f2fd',
+              backColor: '#cafafa',
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-backColor">
+    <main class="container mx-auto sm:p-6 sm:w-11/12 flex flex-col">
+      <div class="flex justify-around items-center center text-ctr">
+        <p
+          class="text-3xl p-6 bg-baseAccent rounded-2xl uppercase text-textAccent font-bold"
+        >
+          Movements Remaining: <span class="moves">8</span>
+        </p>
+        <p
+          class="text-3xl p-6 bg-baseAccent rounded-2xl w-96 text-center uppercase text-textAccent font-bold"
+        >
+          Your Score: <span class="score">0</span>
+        </p>
+      </div>
+      <div
+        class="cards-ctr grid grid-cols-4 grid-rows-4 gap-2 justify-items-center"
+      >
+        <div class="card">
+          <div class="front">
+            <img src="face-1.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-2.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-3.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-4.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-5.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-6.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-7.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-8.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-1.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-2.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-3.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-4.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-5.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-6.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-7.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <img src="face-8.jpg" width="100%" />
+          </div>
+          <div class="back">
+            <p class="text-2xl">Flip Me</p>
+          </div>
+        </div>
+      </div>
+      <div
+        id="game-over-modal"
+        class="fixed inset-0 bg-backColor bg-opacity-50 hidden flex items-center justify-center"
+      >
+        <div class="bg-baseAccent p-8 rounded-lg shadow-lg text-center">
+          <h2 class="text-2xl text-textAccent  font-bold mb-4" id="game-over-message">
+            Game Over!
+          </h2>
+          <button id="restart-btn" class="bg-backColor text-baseAccent px-4 py-2 rounded">
+            Restart Game
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
