@@ -5,7 +5,7 @@ const restartBtnEl = document.getElementById('restart-btn');
 const gameOverModalEl = document.getElementById('game-over-modal');
 const gameOvermessageEl = document.getElementById('game-over-message');
 let score = 0;
-let moves = 13;
+let moves = 14;
 let flippedCards = [];
 let matchedPairs = 0;
 const images = [
@@ -75,12 +75,12 @@ const cardClickHandler = (e) => {
 
 const restartGame = () => {
   score = 0;
-  moves = 13;
+  moves = 14;
   matchedPairs = 0;
   flippedCards = [];
 
   scoreEl.textContent = '0';
-  movesEl.textContent = '13';
+  movesEl.textContent = '14';
   gameOverModalEl.classList.add('hidden');
 
   startGame();
